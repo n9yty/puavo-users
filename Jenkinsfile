@@ -119,6 +119,7 @@ EOF
         '''
 
         // Execute rest tests first as they are more low level
+        sh 'sleep 3600000'
         sh 'make test-rest'
         sh 'make test'
 
